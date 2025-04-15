@@ -7,7 +7,7 @@ const SettingsScreen = ({ navigation }: { navigation: any }) => {
       <Text style={styles.text}>Home Screen</Text>
       <Button
         title="Go to Details"
-        onPress={() => navigation.navigate('Details')}
+        onPress={() => navigation.navigate('Home' as never)}
       />
     </View>
   );

@@ -1,28 +1,18 @@
-import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet, Pressable } from 'react-native';
+import { globalStyles } from '../../theme/them';
+import PrimaryButton from '../../components/shared/PrimaryButton';
+
 
 const HomeScreen = ({ navigation }: { navigation: any }) => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Home Screen</Text>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('Details')}
+    <View style={globalStyles.container}>
+      <Text>Home Screen</Text>
+      <PrimaryButton
+        onPress={() => navigation.navigate('Details' as never)}
+        label="Go to Details Screen"
       />
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  text: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-});
 
 export default HomeScreen;
