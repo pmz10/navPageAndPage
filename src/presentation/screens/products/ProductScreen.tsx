@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-const SettingsScreen = ({ navigation }: { navigation: any }) => {
+const  ProductScreen= () => {
   return (
     <View style={styles.container}>
-      <Text>SettingsScreen</Text>
+      <Text>ProductScreen</Text>
     </View>
   );
 };
@@ -16,4 +16,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SettingsScreen;
+export default ProductScreen;
